@@ -1,0 +1,262 @@
+ .font-style {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+}
+
+.custom-div:hover {
+  border-radius: 100px 0px;
+  background: #fff;
+  box-shadow: 0px 30px 50px rgba(32, 168, 111, 0.1);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.custom-div-one {
+  border-radius: 100px 0px;
+  background: #fff;
+  box-shadow: 0px 30px 50px rgba(32, 168, 111, 0.1);
+  cursor: pointer;
+}
+
+.footer-logo {
+  width: 150.21px;
+  height: 100.59px;
+  background: transparent;
+}
+/* Rayhan */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.what-bg {
+  background-image: url(image/what.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+a.nav-link {
+  font-weight: 700;
+  margin-right: 10px;
+}
+.hader-text h1,
+h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  color: #0d052e;
+}
+.btn-cruve {
+  background-image: linear-gradient(120deg, #1cd8ba, #2ebbed);
+  padding: 10px 25px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff;
+}
+.header {
+ background-image:linear-gradient(90deg,#684EFB,#BB4EFF) ;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 90vh;
+}
+
+.header-image img {
+  width: 100%;
+}
+
+.stay {
+  background-image: url(image/headerbgside.png);
+  background-position: left top;
+}
+
+.item1 img {
+  height: 60px;
+}
+.item2 img {
+  height: 60px;
+}
+
+.item1 {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 5px 5px 5px 5px #eafdf5;
+}
+.item1:hover {
+  background-image: linear-gradient(90deg, #0ebbdc, #1edcb6);
+  color: #fff;
+}
+.fixtedcolor {
+  background-image: linear-gradient(90deg, #0ebbdc, #1edcb6);
+  color: #fff;
+}
+.logo img {
+  height: 80px;
+}
+.item2:hover {
+  background-image: linear-gradient(90deg, #0ebbdc, #1edcb6);
+  color: #fff;
+}
+.item2 {
+  margin-right: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px 5px #eafdf5;
+}
+.text {
+  padding: 10px;
+}
+
+
+.archivstyle {
+  padding: 100px 0px;
+}
+
+/* payal */
+#pricing-area {
+  background-image: url(image/headerbgside.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.team-work .price {
+  background-color: white;
+  box-shadow: 8px 5px 20px #ccc;
+  padding: 5;
+  margin: 5px 0;
+  border: 3px solid #fff;
+  height: 100%;
+}
+
+.price:hover {
+  transition: 0.2s ease;
+  border: 3px solid #64cee4;
+}
+.price:hover .hide-btn {
+  display: block;
+  margin: 0px 100px;
+}
+
+.hide-btn {
+  display: none;
+}
+.team-work .price hr {
+  margin: auto;
+  width: 55%;
+  border: 0.2px solid #64cee4;
+  border-color: linear-gradient(90deg, #0ebbdc, #1edcb6);
+}
+.input-search {
+  position: relative;
+}
+
+.search {
+  background-image: linear-gradient(120deg, #1cd8ba, #2ebbed);
+  width: 100px;
+  color: white;
+  margin-top: 30px;
+  position: absolute;
+  left: 57%;
+  height: 40px;
+  font-size: 10px;
+}
+.footer-icon {
+  justify-content: start;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-icon {
+    margin-left: 15%;
+  }
+  .items {
+    text-align: center;
+  }
+
+  .search {
+    background-image: linear-gradient(120deg, #1cd8ba, #2ebbed);
+    width: 100px;
+    color: white;
+    margin-top: 30px;
+    position: absolute;
+    left: 60%;
+    height: 40px;
+    font-size: 10px;
+  }
+}
+.custom-div a,h5{
+  text-decoration: none;
+  color: #333;
+}
+
+/* others style */
+.service-text-area small{
+  font-weight: 700;
+}
+.service-text-area h1{
+  margin:5% 0% 5% 0%;
+  font-size: 40px;
+  font-weight: 700;
+}
+.service-text-area h1 span{
+  color: #50ABF9;
+}
+
+.icon{
+  color:#50ABF9 ;
+  margin-right: 20px;
+  font-size: 45px;
+}
+
+.icon2{
+  color: #50ABF9;
+  margin-right: 15px;
+  font-size: 40px;
+}
+
+
+.servicearea2nd{
+  background-image: url(img/background_plumbing_01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5%;
+
+}
+
+.icon-2{
+  color: #50ABF9;
+  margin-right: 10%;
+  font-size: 45px;
+  margin-top:15%
+}
+
+.footer{
+  background-color:#001E38 ;
+  color: #FFF;
+}
+.footer h2{
+  color: #FFF;
+}
+.fticon{
+  font-size: 30px;margin: 10px 0px;
+}
+
+.phn a{
+  text-decoration: none;
+  color: #FFF;
+  font-size: 46px;
+  font-weight: 700;
+  
+}
+.phn a i{
+  background-color: cyan;
+  padding: 15px;
+  margin-right: 2%;
+  border-radius: 25px;
+}

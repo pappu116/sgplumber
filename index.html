@@ -1,0 +1,534 @@
+<?php
+
+if (isset($_POST['email'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
+
+    $to = 'pappublak@gmail.com';
+
+    $ip = $_SERVER['REMOTE_ADDR'];
+	$domain = 'sgbestplumber.com';
+
+  
+ $subject = "NEW Lead From $email !";
+ $txt = "Name: $name ,
+ Email: $email , 
+ Phone: $phone , 
+
+
+ Text: $message , 
+
+ Ip Address: $ip";
+ $headers = "From: admin@$domain" . "\r\n";
+ mail($to,$subject,$txt,$headers);
+
+ $success = TRUE;
+
+
+
+}
+
+
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <title>SG/Plumber</title>
+    <script src="https://kit.fontawesome.com/17014f8d51.js" crossorigin="anonymous"></script>
+</head>
+
+<body >
+    <main >
+        <div class="header  ">
+        <div class="container   ">
+                <nav class="navbar   navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand logo" href="#"><h2 >SG </h2></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Service">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="">
+                                    <div class=" btn btn-cruve">Our Team</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <header>
+
+                <div class="container">
+                    <div class="row  d-flex justify-content-center align-items-center mt-5 mb-5">
+                        <div class="col-md-5 hader-text ">
+                            <h1 class="text-white" > SG <br>Plumber </h1>
+                            <p class="mt-3 mb-5 text-white">We offer the best plumbing repair in Singapore and provide trustworthy and efficient 24-hour emergency plumbing services. Call us today for all your plumbing needs.</p>
+                            <div class="phn ">
+                                <a href="tel:+84306670"> <h2 ><i class="fas fa-phone-alt"></i> 84306670</h2></a>
+                            </div>
+                            <a href="tel:+84306670">
+                                <div class="btn btn-cruve">Contact Us</div>
+                            </a>
+
+                        </div>
+                        <div class="col-md-6 offset-md-1 header-image">
+                            <img src="img/sgplumber.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!--  WHAT WE DO  -->
+        <section id="Service" class="container what-bg pt-5 ">
+            <div class="text-center">
+                <h1 class="font-style">What we do</h1>
+                <small class="text-muted">Our main focus is to make the User Experience very <br>
+                    simple and easy. Simplicity is our Strength.</small>
+            </div>
+            <div class="row mt-5 container">
+                <div class="col-md-3 col-sm-12 custom-div p-4 pt-4">
+                 <a href="#Install">
+                    <div class="text-center">
+                        <div>
+                            <img height="115px" width="115px" src="img/services_02.png" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <h5>Installation/Repair Services</h5>
+                            <small class="text-muted">As the best plumber in Singapore, we manage the installation of water heaters.</small>
+                        </div>
+                    </div>
+                 </a>
+                </div>
+                <div class="col-md-3 col-sm-12 custom-div-one custom-div p-3 pt-4">
+                    <a  href="#Chokage">
+                        <div class="text-center">
+                            <div>
+                                <img height="115px" width="115px" src="img/services_01.png" alt="">
+                            </div>
+                            <div  class="mt-3">
+                                <h5 >Chokage Services</h5>
+                                <small class="text-muted">We provide chokage services for floor trap chokes, drainage pipes, water pipes, and concealed pipes</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-12 custom-div p-3 pt-4">
+                   <a href="#Leakage">
+                    <div class="text-center">
+                        <div>
+                            <img height="115px" width="115px" src="img/services_03.png" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <h5>Leakage Services  </h5>
+                            <small class="text-muted">SG Plumber offers professional services for dealing with water leakage of sink pipes,</small>
+                        </div>
+                    </div>
+                   </a>
+                </div>
+                <div class="col-md-3 col-sm-12  custom-div p-3 pt-4">
+                    <a href="">
+                        <div class="text-center">
+                            <div>
+                                <img height="115px" width="115px" src="image/Group 72@2x.png" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <h5>Future</h5>
+                                <small class="text-muted">The point of using Lorem
+                                    Ipsum is that it has a more-orless
+                                    normal.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--pappu stay runing and project area -->
+        <section  class="stay mb-3">
+            <div class="aprech">
+                <div id="Chokage" class="container  pt-5 pb-5">
+                    <div class="row d-flex justify-content-center stylis align-items-center  mt-5 mb-5">
+                        <div class="col-md-6 header-image">
+                            <img src="img/services_01.png" alt="" class="img-fluid">
+                        </div>
+                       
+                        <div  class="col-md-5 offset-md-1  mt-5 service-text-area">
+                            <small>SG Plumber </small>
+                            <h1>Chokage <span>Services</span></h1>
+                            <div class="d-flex ">
+                              <i class="fas fa-tools icon "></i>
+                              <div class="text-area ">
+                                <h4>FLOOR TRAP CHOKAGE</h4>
+                                <p class="text-muted">We provide chokage services for floor trap chokes, drainage pipes, water pipes, and concealed pipes, all with the help of our best plumbers in Singapore. They provide the right set of tools and equipment for each situation, so you have nothing else to think about. </p>
+                              </div>
+                            </div>
+                            <div class="d-flex ">
+                              <i class="fas fa-users-cog icon2"></i>
+                              <div class="text-area ">
+                                <h4>MANHOLE, DITCH, URINALS, AND BATHTUBS</h4>
+                                <p class="text-muted">Our best Singapore plumbers are in charge of managing plumbing chokes and repair of toilet bowls, bathtubs, wash basins, and urinal bowls. This also includes flooding and clogging of the drainage, which is a task only the best plumbing repair services in Singapore can handle.</p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section  class=" mb-3">
+            <div class="aprech">
+                <div id="Install" class="container  pt-5 pb-5">
+                    <div  class="row d-flex justify-content-center stylis align-items-center  mt-5 mb-5">
+                     <div class="col-md-5   mt-5 service-text-area">
+                            <small>SG Plumber</small>
+                 <h1>Installation and <span>Repair Services</span></h1>
+                    <div class="d-flex ">
+                    <i class="fas fa-tools icon "></i>
+                    <div class="text-area ">
+                        <h4>WATER HEATERS</h4>
+                        <p class="text-muted">As the best plumber in Singapore, we manage the installation of water heaters whether you choose to have an instant water heater or one that requires a water tank. The only difference is the cost, so depending on your budget, we can work with what’s best for your household.</p>
+                    </div>
+                    </div>
+                      <div class="d-flex ">
+                        <i class="fas fa-users-cog icon2"></i>
+                        <div class="text-area ">
+                        <h4>PLUMBING AND SANITATION </h4>
+                        <p class="text-muted">Plumber Singapore is equipped to provide the best plumbing tools and accessories, including the kind of tap required for your sink. Whether it’s for your bathroom or kitchen, we have a wide array of taps ranging from mixer taps to bib taps, to provide you with endless designs and functionalities to choose from. </p>
+                        </div>
+                          </div>
+                          </div>
+                          <div class="col-md-6 offset-md-1 header-image">
+                            <img src="img/services_02.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-image: linear-gradient(90deg,#d4d3d3,#e2dfdf);"  class=" mb-3">
+            <div class="aprech ">
+                <div id="Leakage" class="container  pt-5 pb-5">
+                    <div class="row d-flex justify-content-center stylis align-items-center  mt-5 mb-5">
+                        <div class="col-md-6 header-image">
+                            <img src="img/services_03.png" alt="" class="img-fluid">
+                        </div>
+                        
+                        <div  class="col-md-5 offset-md-1  mt-5 service-text-area">
+                            <small>SG Plumber</small>
+                            <h1>Leakage <span>Services</span></h1>
+                            <div class="d-flex ">
+                              <i class="fas fa-tools icon "></i>
+                              <div class="text-area ">
+                                <h4>UNDERGROUND AND HIDDEN PIPE LEAKAGE</h4>
+                                <p class=" text-muted text-wrap">SG Plumber offers professional services for dealing with water leakage of sink pipes, floor traps, stainless steel, and copper pipes. We also maintain and handle bathroom leakage, which includes the toilet bowl, wash basin, and flush system.  </p>
+                              </div>
+                            </div>
+                            <div class="d-flex ">
+                              <i class="fas fa-users-cog icon2"></i>
+                              <div class="text-area ">
+                                <h4>STAINLESS STEEL, UPVC, AND COPPER PIPING</h4>
+                                <p class="text-muted text-wrap">We also manage the repair and repiping of stainless steel plumbing, including Unplasticized Polyvinyl Chloride material and copper piping. Our best Singapore plumbers encourage homeowners to avoid the use of lead to avoid corrosion of pipes. </p>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--pappu Archive area   -->
+     
+        <div class="archivstyle container">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="archive-text pb-5 col-sm-12 col-md-5">
+                        <h2>Our Achievements</h2>
+                        <p>it is a long established face that a reader will be distracted by the readable content of a
+                            page when
+                            looking at its layout The point of using</p>
+                    </div>
+                    <div class="col-md-6 d-flex offset-md-1">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="item1 d-flex fixtedcolor">
+                                    <img src="image/happy@2x.png" alt="">
+                                    <div class="text">
+                                        <h2>700+</h2>
+                                        <p>Happy Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="item2  d-flex align-items-center ">
+                                    <img src="image/marketing@2x.png" alt="">
+                                    <div class="text">
+                                        <h2>140+</h2>
+                                        <p>Projects Completed</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="item2  d-flex">
+                                    <img src="image/surface1@2x.png" alt="">
+                                    <div class="text">
+                                        <h2>25+</h2>
+                                        <p>Crazy minds</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="item1 d-flex">
+                                    <img src="image/transportation@2x.png" alt="">
+                                    <div class="text">
+                                        <h2>75+</h2>
+                                        <p>Running Projects</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section id="pricing-area" class="mt-5 team-work">
+            <div class="container">
+                <div class="row">
+                    <!-- Section Title Start -->
+                    <div class="col-lg-12">
+                        <div class="section-title  text-center">
+                            <h2>Choose Your Dedicated Team</h2>
+                        </div>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+
+                <!-- Pricing Table Content Start -->
+                <div class="row mt-5 ">
+                      <!-- Single Pricing Table -->
+                      <div  class="col-lg-4 col-md-6 text-center mb-5">
+                        <div class="price "><img src="img/inner_01-1.jpg" alt="" class="img-fluid">
+                            <h5>Faucet Installation</h5>
+                            <hr>
+                            <ul class="package-list mt-3 ">
+                                <li>
+                                   <p>Our qualified Singapore plumbers at Plumber Singapore are able to guide you throughout the process of installing a faucet. That said, if you truly want to avoid leakage or faulty installations, you can leave our licensed professionals to do the job for you. </p>
+                                </li>
+                              <a href=""> <div class="btn hide-btn btn-cruve ">Contact Us</div></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Single Pricing Table -->
+
+                    <!-- Single Pricing Table -->
+                    <div  class="col-lg-4 col-md-6 text-center mb-5">
+                        <div class="price "><img src="img/inner_01-1.jpg" alt="" class="img-fluid">
+                            <h5>Drain Cleaning</h5>
+                            <hr>
+                            <ul class="package-list mt-3 ">
+                                <li>
+                                   <p>To clean your drains, we avoid the use of chemicals that can corrode your pipes and cause rust and degradation. At Plumber Singapore, we care about the environment, so the equipment we use is eco-friendly. As the service known for the best plumbing repair in Singapore, we devote ourselves to helping in the best possible way we can -- and that means caring for your home and environment. </p>
+                                </li>
+                              <a href=""> <div class="btn hide-btn btn-cruve ">Contact Us</div></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Single Pricing Table -->
+
+                    <!-- Single Pricing Table -->
+                    <div class="col-lg-4 col-md-6 text-center mb-5">
+                        <div class="price "><img src="img/inner_01-1.jpg" alt="" class="img-fluid">
+                            <h5>Water Filter Cleaning
+                            </h5>
+                            <hr>
+                            <ul class="package-list mt-3 ">
+                                <li>
+                                   <p>We also offer to clean your water filter. As experts, we know how to install and put it back after thoroughly cleaning it. Our best plumbers in Singapore can even take apart and clean complicated filter arrays and systems.</p>
+                                </li>
+                              <a href=""> <div class="btn hide-btn btn-cruve ">Contact Us</div></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Single Pricing Table -->
+                </div>
+                <!-- Pricing Table Conatent End -->
+            </div>
+        </section>
+        <br>
+        <!--== Pricing Area End ==-->
+
+<!-- 2nd service area code start -->
+<div id="about" class="servicearea2nd">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1 style="font-weight: 700;font-size:40px">SG Plumber <span style="color: #50ABF9;">Services</span>
+            </h1>
+            <p>SG Plumber  is run by the best Singapore plumbers, making sure all your leakage and drainage problems are solved and well-handled. As the company that does the best plumbing repair in Singapore, we also offer the following plumbing services:
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex">
+              <i class="fas fa-handshake icon-2"></i>
+              <div class="s-text-area">
+                <h5>WATER PIPE LEAK REPAIR
+                </h5>
+                <p>As professional plumbers, we repair water supply pipes, bursting or leaking pipes, and noisy or frozen pipes. Our best Singapore plumbers are also knowledgeable at finding underground pipe leaks that cannot always be seen or checked.</p>
+              </div>
+            </div>
+            
+            <div class="d-flex">
+              <i class="fas fa-cogs icon-2"></i>
+              <div class="s-text-area">
+                <h5>BATHROOM AND KITCHEN APPLIANCE INSTALLATION
+                </h5>
+                <p>Aside from providing the best plumbing repair in Singapore, we also offer installation of bathroom appliances like sinks, wash basins, toilets, bathtubs and showers, and kitchen appliances like the refrigerator, dishwasher, garbage disposal, stove, and oven.
+    
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+           <div class="d-flex">
+            <i class="fas fa-leaf icon-2"></i>
+             <div class="s-text-area">
+              <h5>PLUMBING REPAIR </h5>
+              <p>We handle installation and repair of sinks, toilets, and water pipes through our best Singapore plumbers. They make sure everything is firmly tight, all the bolts are in place, and all the pipes are connected. </p>
+             </div>
+           </div>
+           <div class="d-flex">
+            <i class="fas fa-cog icon-2"></i>
+             <div class="s-text-area">
+              <h5>WATER HEATER INSTALLATION</h5>
+              <p>Having a water heater installed also requires air ventilation for safety. This requires both plumbing and electrical work, which we at Plumber Singapore can offer. An electric water heater’s lifespan usually lasts about 8-10 years before you need to call for replacement, but we’ll do our best to ensure you get as much use out of it before it comes to that. </p>
+             </div>
+           </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- 2nd service area code end -->
+    <!-- <section class="mt-5">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="">
+                    <div class="text-center">
+                        <h3>Get your design right, right now</h3>
+                        <p class="text-secondary font-weight-secondary">Be the first know our latest offers and updates!
+                        </p>
+                    </div>
+                    <div class="mt-3 d-flex">
+                        <input style="height:50px" class="form-control input-search text-secondary mt-4" type="text"
+                            name="" id="" placeholder="Enter Your Email address">
+                        <div class="">
+                            <button class="btn search">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>  -->
+
+  <!-- sucess start  -->
+  
+ <!-- <?php if (isset($success) && $success) {
+    ?>
+    i am success message
+
+<?php 
+
+ }
+?> -->
+
+
+
+<!-- sucess end  -->
+
+        <!-- THis Footer Work For Pappu   -->
+    </main>
+   
+         <!-- Footer Area Start -->
+   <footer class=" footer  ">
+      <div class="container pt-5 pb-5">
+          <div class="row">
+              <div class="col-md-4">
+                <i class="fab fa-telegram-plane fticon" ></i>
+                  <h2>REQUEST A QUOTE</h2>
+                  <form action="" method="POST">
+            <input class="form-control" type="text" name="name" id="" placeholder="Full Name">
+            <br>
+            <input class="form-control" type="text" name="phone" id="" placeholder="Phone">
+            <br>
+            <input class="form-control" type="email" name="email" id="" placeholder="Email">
+            <br>
+            <textarea class="form-control" name="message" id="" cols="50" rows="2" placeholder="Message"></textarea>
+            <br>
+            <button class="btn btn-primary">send</button>
+
+            </form>
+              </div>
+              <div class="col-md-4">
+                <i class="fas fa-user-clock fticon"></i>
+                <h2 class="text-uppercase">WORKING HOURs</h2>
+                <div class="workshidul">
+                    <p>Mon – Fri 7AM-5PM</p>
+                    <p>Sat 10 AM-5PM</p>
+                    <p>Sun 10 AM-3PM</p>
+                    <br>
+                    <i class="fab fa-telegram-plane fticon"></i>
+                    <br>
+                    <h2>EMAIL</h2>
+                    <p>albarik1991@gmail.com 
+                    </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <i class="fas fa-phone-volume fticon"></i>
+                <h2 class="text-uppercase ">OFFICE PHONE
+                </h2>
+                <p class="phn"><a href="tel:84306670"><i class="fas fa-phone-alt"></i> 84306670</a></p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- Footer Area End -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
